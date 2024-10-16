@@ -1,4 +1,4 @@
-# 07. Containers conecction.
+# 07. Creating a container with environment variables.
 
 Ya aprendimos como funcionan los ***contenedores***. ahora intentemos realizar una pequeña ***aplicación***.
 
@@ -24,6 +24,31 @@ docker rm monguito
 
 ~~~
 docker image rm monguito
+~~~
+
+---
+### Ingresar archivo (.zip) a servidor con Docker
+
+Debemos tener el código y archivos, si esta en un servidor, es necesario insertarlo, podemos hacerlo con ***ssh*** con `scp`.
+
+~~~
+scp <archivo> <usuario>@<IP-servidor>:<Ruta-de-copiado>
+~~~
+
+***Nota:*** Para utilizar este comando, es necesario ubicarse en el directorio del ***archivo*** (se recomienda copiar el ***.zip***).
+
+Podemos colocar un `.` en la ruta donde deseamos que se copie.
+
+Un ejemplo:
+
+~~~
+scp <archivo> <usuario>@<IP-servidor>:.
+~~~
+
+y descomprimir:
+
+~~~
+unzip <archivo>
 ~~~
 
 ---
@@ -66,9 +91,3 @@ Y podemos ver si se encuentra en ejecución:
 ~~~
 docker ps
 ~~~
-
-
-
-
-
-

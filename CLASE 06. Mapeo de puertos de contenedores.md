@@ -18,7 +18,7 @@ Tomémoslo de la siguiente manera:
 
 Expliquemos mejor con la siguiente imagen:
 
-![[ports-c-docker.png]]
+![[resources/ports-c-docker.png]]
 
 Donde tenemos ***3 contenedores***:
 
