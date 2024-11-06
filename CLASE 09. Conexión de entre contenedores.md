@@ -69,4 +69,17 @@ docker network rm mired
 
 Si visualizamos, nuestra red ya no existe
 
+Creémosla de nuevo, la necesitaremos:
+
+~~~
+docker network create mired
+~~~
+
 ---
+
+***Nota:*** La manera en la cual los ***contenedores*** se ***comunican entre sí*** (dentro de su red interna) es mediante el ***nombre*** del contenedor.
+
+Esto quiere decir, que al ***codificar***, el nombre de nuestro dominio no seria `localhost`, sino el nombre del contenedor a utilizar.
+
+	Si debes modificar tus conexiones a tus archivos, no dudes en realizarlo.
+
